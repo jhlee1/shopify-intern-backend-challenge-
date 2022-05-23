@@ -1,0 +1,48 @@
+### List inventory items
+GET http://localhost:8080/inventory/items
+
+### Create an inventory item
+POST http://localhost:8080/inventory/items
+Content-Type: application/json
+
+{
+  "name": "Example1",
+  "description": "Item created 1"
+}
+
+### Create another inventory item
+POST http://localhost:8080/inventory/items
+Content-Type: application/json
+
+{
+  "name": "Example2",
+  "description": "Item created 2"
+}
+
+### Edit inventory item
+PUT http://localhost:8080/inventory/items/1
+Content-Type: application/json
+
+{
+  "name": "Editted example1",
+  "description": "This item is editted"
+}
+
+
+### Delete inventory item
+DELETE http://localhost:8080/inventory/items/1
+
+### Add comment on inventory item 2
+POST http://localhost:8080/inventory/items/addComment/2
+Content-Type: application/json
+
+{
+  "authorName": "JH",
+  "content": "Example comment on item 2"
+}
+
+### Delete comment
+PUT http://localhost:8080/inventory/items/deleteComment/3
+
+### Undelete comment
+PUT http://localhost:8080/inventory/items/unDeleteComment/3
