@@ -2,7 +2,8 @@
 
 ## Description
 - I have implemented the first in the second list `When deleting, allow deletion comments and undeletion` 
-
+- To run the application, `./gradlew bootRun`
+- To package into jar `./gradlew bootJar`
 
 ## APIs
 Here is how to use APIs. 
