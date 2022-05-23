@@ -15,7 +15,7 @@ import java.util.List;
 public class DefaultResource {
     @GetMapping
     public ResponseEntity entry() {
-        return ResponseEntity.ok("Hello world!");
+        return ResponseEntity.ok("Check README.md for API instructions");
     }
 
 }
